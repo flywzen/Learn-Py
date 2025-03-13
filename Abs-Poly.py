@@ -6,7 +6,7 @@ class Parent:
         self.alleles = self._determine_alleles()
     
     def _determine_alleles(self):
-        # Mapping golongan darah ke alel
+    
         match self.blood_type:
             case 'A': return ['A', 'O']
             case 'B': return ['B', 'O']
@@ -33,8 +33,7 @@ class Child:
             father.get_allele(),
             mother.get_allele()
         ])
-        
-        # Tentukan golongan darah
+     
         match alleles:
             case ['A', 'A'] | ['A', 'O']: return 'A'
             case ['B', 'B'] | ['B', 'O']: return 'B'
@@ -42,7 +41,6 @@ class Child:
             case ['O', 'O']: return 'O'
             case _: return 'Unknown'  
 
-# Contoh penggunaan
 father = Father('A')
 mother = Mother('B')
 child = Child(father, mother)
