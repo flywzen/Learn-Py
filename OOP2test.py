@@ -30,7 +30,6 @@ class Enemy:
         else:
             print(f"{self.type} is dead!")
 
-# Contoh penggunaan
 player1 = Player("Player1", 100, 10)
 enemy1 = Enemy("Zombie", 50)
 
