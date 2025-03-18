@@ -25,7 +25,6 @@ class Calculator:
     def __repr__(self):
         return str(self.value)
 
-# Contoh penggunaan
 a = Calculator(8)
 b = Calculator(2)
 print("Hasil Tambah:", a + b)         # 10
